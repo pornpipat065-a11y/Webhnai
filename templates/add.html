@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>เพิ่มของที่เจอ</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: #202020;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+input {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button {
+    padding: 10px 30px;
+    font-size: 18px;
+    background: #ff0066;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button:hover {
+    background: #cc0055;
+}
+</style>
+</head>
+
+<body>
+    <h1>เพิ่มของที่เจอ</h1>
+
+    <form method="POST">
+        <input type="text" name="name" placeholder="ชื่อสิ่งของ" required><br>
+        <input type="text" name="place" placeholder="สถานที่พบ" required><br>
+        <button class="button">บันทึก</button>
+    </form>
+
+    <a href="/"><button class="button" style="margin-top:20px;">กลับหน้าแรก</button></a>
+</body>
+</html>
