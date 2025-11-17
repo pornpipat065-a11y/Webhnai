@@ -12,37 +12,36 @@
         text-align: center;
         padding-top: 100px;
     }
-
-    .button {
-        display: inline-block;
-        padding: 15px 40px;
-        margin: 10px;
-        font-size: 20px;
-        color: white;
-        background: linear-gradient(45deg, #ff0066, #6600ff);
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: 0.3s;
-        box-shadow: 0 0 10px #ff0099;
+    .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: white;
+        border-top: 1px solid #ccc;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
     }
-
-    .button:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 20px #cc33ff;
+    .bottom-nav a {
+        text-align: center;
+        text-decoration: none;
+        color: gray;
+        font-size: 14px;
+    }
+    .bottom-nav a.active {
+        color: #2196F3;
+        font-weight: bold;
     }
 </style>
 </head>
 
 <body>
     <h1>ศูนย์ของหาย – ของเจอ</h1>
-
-    <a href="/add">
-        <button class="button">➕ เพิ่มของที่เจอ</button>
-    </a>
-
-    <a href="/list.html">
-        <button class="button">📜 ดูรายการทั้งหมด</button>
-    </a>
+    <div class="bottom-nav">
+        <a href="index.html" class="active">หน้าหลัก</a>
+        <a href="add.html">เพิ่มของที่เจอ</a>
+        <a href="list.html.html">ดูรายการทั้งหมด</a>
+    </div>
 </body>
 </html>
